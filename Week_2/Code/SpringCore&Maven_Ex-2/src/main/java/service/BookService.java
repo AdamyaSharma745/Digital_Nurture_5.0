@@ -1,0 +1,23 @@
+package service;
+
+import repository.BookRepository;
+
+public class BookService {
+
+    private BookRepository bookRepository;
+
+    public void setBookRepository(BookRepository bookRepository) {
+
+        this.bookRepository = bookRepository;
+
+    }
+
+    public void showService() {
+
+        System.out.println("Book Service Object Created");
+
+        bookRepository.showRepository();
+
+    }
+
+}
